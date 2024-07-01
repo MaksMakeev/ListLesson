@@ -29,6 +29,7 @@ namespace ListLesson
             }
             stopWatch.Stop();
             Console.WriteLine("RunTime of List filling is " + stopWatch.Elapsed);
+            stopWatch.Reset();
 
             stopWatch.Start();
             for (int i = 0; i < maxLengthOfList; i++)
@@ -40,6 +41,7 @@ namespace ListLesson
             }
             stopWatch.Stop();
             Console.WriteLine("RunTime of division remaindres searching is " + stopWatch.Elapsed);
+            stopWatch.Reset();
 
             /*
             Console.WriteLine('\n');
@@ -55,6 +57,7 @@ namespace ListLesson
             var listElement = testList[requiredElement - 1];
             stopWatch.Stop();
             Console.WriteLine($"The {requiredElement}-th elemet of the testList is {listElement} and searching took {stopWatch.Elapsed}\n");
+            stopWatch.Reset();
 
             //ArrayList
 
@@ -65,6 +68,7 @@ namespace ListLesson
             }
             stopWatch.Stop();
             Console.WriteLine("RunTime of ArrayList filling is " + stopWatch.Elapsed);
+            stopWatch.Reset();
 
 
             stopWatch.Start();
@@ -77,6 +81,7 @@ namespace ListLesson
             }
             stopWatch.Stop();
             Console.WriteLine("RunTime of division remaindres searching is " + stopWatch.Elapsed);
+            stopWatch.Reset();
 
             /*
             Console.WriteLine('\n');
@@ -91,6 +96,7 @@ namespace ListLesson
             var arrayListElement = testArrayList[requiredElement - 1];
             stopWatch.Stop();
             Console.WriteLine($"The {requiredElement}-th elemet of the testArrayList is {arrayListElement} and searching took {stopWatch.Elapsed}\n");
+            stopWatch.Reset();
 
             //LinkedList
 
@@ -101,6 +107,7 @@ namespace ListLesson
             }
             stopWatch.Stop();
             Console.WriteLine("RunTime of LinkedList filling is " + stopWatch.Elapsed);
+            stopWatch.Reset();
 
             stopWatch.Start();
             var linkedListElementDiv = testLinkedList.First;
@@ -114,6 +121,7 @@ namespace ListLesson
             }
             stopWatch.Stop();
             Console.WriteLine("RunTime of division remaindres searching is " + stopWatch.Elapsed);
+            stopWatch.Reset();
 
             /*
             Console.WriteLine('\n');
@@ -134,6 +142,7 @@ namespace ListLesson
             }
             stopWatch.Stop();
             Console.WriteLine($"The {requiredElement}-th elemet of the testLinkedList is {linkedListElement.Value} and searching took {stopWatch.Elapsed}\n");
+            stopWatch.Reset();
         }
     }
 }
